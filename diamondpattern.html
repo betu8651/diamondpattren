@@ -1,0 +1,31 @@
+<script>
+    var col = 1;
+    var row = 5;
+    var space = row - 1;
+    for (var i = 1; i <=row; i++){
+        for (var sp = 1; sp <= space; sp++){
+            document.write("_");
+        }
+        for (var j = 1; j<= col; j++){
+            document.write("*");
+        }
+        document.write("<br/>");
+        col = col +2;
+        space--;
+    }
+
+
+    var lowerpartcol = col -4;
+    var lowerspace = 1;
+    for(var i = 1; i<= row - 1; i++){
+        for (var sp = 1; sp <= lowerspace; sp++){
+            document.write("_");
+        }
+        for (var j = 1; j<= lowerpartcol; j++){
+            document.write("*");
+        }
+        lowerpartcol = lowerpartcol - 2;
+        lowerspace++;
+        document.write("<br/>");
+    }
+</script>
